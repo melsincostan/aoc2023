@@ -1,6 +1,6 @@
 # aoc2023
 
-Code and notes about trying to learn rust using AoC 2023 puzzles
+Code and notes about trying to learn rust using AoC 2023 puzzles // started late on 10.12.2023
 
 ## Thoughts
 ### Day 1
