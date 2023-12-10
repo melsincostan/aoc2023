@@ -13,3 +13,7 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: maybe that's a bit too many functions? Solve works with chained `map()` calls which is cool
 - Part 2: can't have multiple `map()` calls after one another for some reason? That can't be good
+
+### Day 3
+
+- These algorithms feel like they are horrendously unoptimized and very not rust like
