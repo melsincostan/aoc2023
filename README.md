@@ -17,3 +17,9 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 ### Day 3
 
 - These algorithms feel like they are horrendously unoptimized and very not rust like
+
+### Day 4
+
+- Part 1: feels more rust-ish again?
+- Part 2: bit less rust-ish, lost time overcomplicating it w/ HashMap when a regular Vec is better since these were contiguous ints.
+- Part 2: Messed around a bit with figuring out how to add stuff properly, having tests helped
