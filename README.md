@@ -23,3 +23,12 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 1: feels more rust-ish again?
 - Part 2: bit less rust-ish, lost time overcomplicating it w/ HashMap when a regular Vec is better since these were contiguous ints.
 - Part 2: Messed around a bit with figuring out how to add stuff properly, having tests helped
+
+### Day 5
+
+- Part 1: IDK how rustish this is
+- Part 1 could be parallelized the same way as part 2 but it's already pretty fast
+- Part 1/2 i am such a dummy with the `>=` instead of `>` for the second part of the range check
+- Part 2: Initially attempted with just caching using a HashMap. That might have been slower, added complexity, was abandonned
+- Part 2 parallelized works fast enough (~4 minutes debug / ~10s release) with low ram (seemingly around ~3-4 MB on a dev build thanks to already doing a round of `.min()` on the parallel loop to slash the amount of possible locations to the local minimum)
+- Bruteforcing isn't very smart but working with `rayon` was fun
