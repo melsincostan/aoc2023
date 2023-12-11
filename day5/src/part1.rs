@@ -31,7 +31,7 @@ pub fn solve(input: &str) -> i64 {
         let mut scratch = *seed;
         for block in &map_blocks {
             for map in block {
-                if scratch >= map.src_range_start && scratch <= map.length + map.src_range_start {
+                if scratch >= map.src_range_start && scratch < map.length + map.src_range_start {
                     scratch += map.dest_range_start - map.src_range_start;
                 }
             }
