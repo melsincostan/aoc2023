@@ -38,7 +38,6 @@ pub fn solve(input: &str) -> i64 {
         }
         scratch
     }).collect();
-    println!("{:?}", destinations);
     *destinations.iter().min().unwrap()
 }
 
