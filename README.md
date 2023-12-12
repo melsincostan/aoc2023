@@ -32,3 +32,9 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 2: Initially attempted with just caching using a HashMap. That might have been slower, added complexity, was abandonned
 - Part 2 parallelized works fast enough (~4 minutes debug / ~10s release) with low ram (seemingly around ~3-4 MB on a dev build thanks to already doing a round of `.min()` on the parallel loop to slash the amount of possible locations to the local minimum)
 - Bruteforcing isn't very smart but working with `rayon` was fun
+
+### Day 6
+
+- Part 1: definitely could have bruteforced this pretty easily
+- Part 2: probably could have bruteforced this as well with parallelization
+- Solving the polynomial is way easier, and there aren't really any edge cases to worry about in that situation
