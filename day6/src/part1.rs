@@ -37,14 +37,6 @@ fn bind_lines(times: &Vec<i64>, distances: &Vec<i64>) -> Vec<Boatrace> {
     races
 }
 
-fn race_result(race: &Boatrace, hold_time: i64) -> i64 {
-    hold_time * (race.time - hold_time)
-}
-
-fn is_race_win(race: &Boatrace, hold_time: i64) -> bool {
-    race_result(race, hold_time) > race.record
-}
-
 fn disc_from_race(race: &Boatrace) -> i64 { // part 1 of the quadratic formula for second degree polynomial solving
     // don't mind me repeating stuff so it is easier to figure out the formula in 6 months
     // x amount of time the button is pressed
@@ -79,7 +71,7 @@ fn win_values_race(race: &Boatrace) -> Option<(i64, i64)>{
 
 #[cfg(test)]
 mod test {
-    use crate::part1::{parse_line, open_file, Boatrace, race_result, is_race_win, disc_from_race, win_values_race, solve};
+    use crate::part1::{parse_line, open_file, Boatrace, disc_from_race, win_values_race, solve};
 
     use super::bind_lines;
 
@@ -111,32 +103,6 @@ mod test {
             time: 30,
             record: 200,
         });
-    }
-
-    #[test]
-    fn race_running() {
-        let race = Boatrace{
-            time: 7,
-            record: 9,
-        };
-        assert_eq!(race_result(&race, 0), 0);
-        assert_eq!(race_result(&race, 1), 6);
-        assert_eq!(race_result(&race, 2), 10);
-        assert_eq!(race_result(&race, 3), 12);
-        assert_eq!(race_result(&race, 4), 12);
-        assert_eq!(race_result(&race, 5), 10);
-        assert_eq!(race_result(&race, 6), 6);
-        assert_eq!(race_result(&race, 7), 0);
-    }
-
-    #[test]
-    fn race_results() {
-        let race = Boatrace{
-            time: 7,
-            record: 9,
-        };
-        assert!(!is_race_win(&race, 1));
-        assert!(is_race_win(&race, 3));
     }
 
     #[test]
