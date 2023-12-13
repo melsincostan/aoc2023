@@ -46,3 +46,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 1: It was fun, although idk how idiomatic my code is again :c
 - Part 2: My optimizer function is way overkill (i could have just returned the `Hand` it optimizes to), it is non-deterministic because i have no guarantees about the order of keys in an `HashMap` so i can't really test it and it is too big and complex but it works :3
 - Part 2: Should have written tests for card power comparison, forgot to demote the power of the Joker at first and i thought i had a bug in my optimizer (maybe there is one but now i return the right result hehe)
+
+### Day 8
+
+- Part 1: Doesn't feel super idiomatic somehow
+- Part 2: First tried to bruteforce, then figured out the math way, then i spent way too long trying to implement my own lcm that works on the array directly using the wikipedia algorithm only for it to take way too long on the actual input so i used the LCM from a crate and made a recursive function to get the lcm of an array, since there are only 6 elements this isn't an issue
