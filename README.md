@@ -2,6 +2,8 @@
 
 Code and notes about trying to learn rust using AoC 2023 puzzles // started late on 10.12.2023
 
+**WARNING**: This contains spoilers for the respective Advent of Code puzzles. Consider implementing them yourself before checking my (very bad and ugly, probably) code out!
+
 ## Thoughts
 ### Day 1
 
