@@ -51,3 +51,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: Doesn't feel super idiomatic somehow
 - Part 2: First tried to bruteforce, then figured out the math way, then i spent way too long trying to implement my own lcm that works on the array directly using the wikipedia algorithm only for it to take way too long on the actual input so i used the LCM from a crate and made a recursive function to get the lcm of an array, since there are only 6 elements this isn't an issue
+
+### Day 9
+
+- Part 1: Probably not idiomatic, it works though
+- Part 2: IDK if i can push to the beginning of a `Vec` and i don't want to figure it out. I can take the part 1 code, reverse the array and replace the `+` by a `-` anyways and it's good enough for me.
