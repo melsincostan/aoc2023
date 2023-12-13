@@ -38,3 +38,9 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 1: definitely could have bruteforced this pretty easily
 - Part 2: probably could have bruteforced this as well with parallelization
 - Solving the polynomial is way easier, and there aren't really any edge cases to worry about in that situation
+
+### Day 7
+
+- Part 1: It was fun, although idk how idiomatic my code is again :c
+- Part 2: My optimizer function is way overkill (i could have just returned the `Hand` it optimizes to), it is non-deterministic because i have no guarantees about the order of keys in an `HashMap` so i can't really test it and it is too big and complex but it works :3
+- Part 2: Should have written tests for card power comparison, forgot to demote the power of the Joker at first and i thought i had a bug in my optimizer (maybe there is one but now i return the right result hehe)
