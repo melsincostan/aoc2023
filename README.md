@@ -2,7 +2,7 @@
 
 Code and notes about trying to learn rust using AoC 2023 puzzles // started late on 10.12.2023
 
-**WARNING**: This contains spoilers for the respective Advent of Code puzzles. Consider implementing them yourself before checking my (very bad and ugly, probably) code out!
+**WARNING**: This contains spoilers for the respective Advent of Code puzzles. Consider implementing them yourself before checking my (very bad and ugly, probably) code out! The thoughts will probably contain spoilers as well!
 
 ## Thoughts
 ### Day 1
@@ -54,5 +54,6 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 ### Day 9
 
+- Both parts could have used some more testing...
 - Part 1: Probably not idiomatic, it works though
 - Part 2: IDK if i can push to the beginning of a `Vec` and i don't want to figure it out. I can take the part 1 code, reverse the array and replace the `+` by a `-` anyways and it's good enough for me.
