@@ -57,3 +57,11 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Both parts could have used some more testing...
 - Part 1: Probably not idiomatic, it works though
 - Part 2: IDK if i can push to the beginning of a `Vec` and i don't want to figure it out. I can take the part 1 code, reverse the array and replace the `+` by a `-` anyways and it's good enough for me.
+
+### Day 10
+
+- Part 1: Pretty ugly, works decently enough, didn't write tests
+- Part 2: Tried flooding (doesn't work, because one can squeeze between pipes)
+- Part 2: Tried raycasting (didn't take into account avoidable pipes, failed)
+- Part 2: considered using strings method to get the area, was unsure whether it would work
+- Part 2: implemented better raycasting ported from https://www.youtube.com/watch?v=r3i3XE9H4uw
