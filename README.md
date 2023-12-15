@@ -65,3 +65,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 2: Tried raycasting (didn't take into account avoidable pipes, failed)
 - Part 2: considered using strings method to get the area, was unsure whether it would work
 - Part 2: implemented better raycasting ported from https://www.youtube.com/watch?v=r3i3XE9H4uw
+
+### Day 11
+
+- Part 1: Rotating 2D arrays yay
+- Part 2: I should have done this for part 1 as well, this expansion is a lot more elegant i think? it might also take less memory...
