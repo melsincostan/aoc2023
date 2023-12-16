@@ -75,3 +75,9 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: actual solving logic (recursion) from https://www.youtube.com/watch?v=g3Ms5e7Jdqo
 - Part 2: used the same optimization as the video (memoization) to deal with the larger values
+
+### Day 13
+
+- This was fun, after the frustration of not figuring out day 12 and of figuring out a potentially correct raycaster for part 2 of day 10 (My problem was casting a ray to the top-left corner of each tile, which would end up in edge cases with L-shapes in the loop at that point. I might go around and reimplement it someday).
+- Part 2: Having tests helped out with debugging.
+- Part 2: I'm decently happy with that solution. It feels somewhat elegant and doesn't seem to be adding /too/ much complexity
