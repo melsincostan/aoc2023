@@ -70,3 +70,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: Rotating 2D arrays yay
 - Part 2: I should have done this for part 1 as well, this expansion is a lot more elegant i think? it might also take less memory...
+
+### Day 12
+
+- Part 1: actual solving logic (recursion) from https://www.youtube.com/watch?v=g3Ms5e7Jdqo
+- Part 2: used the same optimization as the video (memoization) to deal with the larger values
