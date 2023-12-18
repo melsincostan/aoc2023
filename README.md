@@ -81,3 +81,9 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - This was fun, after the frustration of not figuring out day 12 and of figuring out a potentially correct raycaster for part 2 of day 10 (My problem was casting a ray to the top-left corner of each tile, which would end up in edge cases with L-shapes in the loop at that point. I might go around and reimplement it someday).
 - Part 2: Having tests helped out with debugging.
 - Part 2: I'm decently happy with that solution. It feels somewhat elegant and doesn't seem to be adding /too/ much complexity
+
+### Day 14
+
+- Part 1: This was fun to implement, especially the sliding the rocks around!
+- Part 2: Tried with memoization first, it was too slow
+- Part 2: Solved by finding a cycle of weights repeating, it has to repeat at least 4 times, with the series saved up to that point and a HashMap to have occurences of each weight. The final weight can then be calculated with the position in the cycle of the amount of iterations and the start offset of the cycle.
