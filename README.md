@@ -87,3 +87,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 - Part 1: This was fun to implement, especially the sliding the rocks around!
 - Part 2: Tried with memoization first, it was too slow
 - Part 2: Solved by finding a cycle of weights repeating, it has to repeat at least 4 times, with the series saved up to that point and a HashMap to have occurences of each weight. The final weight can then be calculated with the position in the cycle of the amount of iterations and the start offset of the cycle.
+
+### Day 15
+
+- Part 1: This was a breeze to implement (not sure how idiomatic my code is, still...) and pretty fun!
+- Part 2: I like hash maps, implementing one was super fun :3 It isn't the greatest thing ever in terms of hash maps, but the puzzle also somewhat pushed to this i guess
