@@ -92,3 +92,8 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: This was a breeze to implement (not sure how idiomatic my code is, still...) and pretty fun!
 - Part 2: I like hash maps, implementing one was super fun :3 It isn't the greatest thing ever in terms of hash maps, but the puzzle also somewhat pushed to this i guess
+
+### Day 16
+
+- Part 1: Again doesn't feel very idiomatic
+- Part 2: I thought this would need rayon, but running a release build is barely more than a few seconds. Rayon makes it instant. This is why i used map to compute everything, if i decide i need to parallelize i can just pull in rayon and replace `iter()` with `par_iter()`
