@@ -97,3 +97,7 @@ Code and notes about trying to learn rust using AoC 2023 puzzles // started late
 
 - Part 1: Again doesn't feel very idiomatic
 - Part 2: I thought this would need rayon, but running a release build is barely more than a few seconds. Rayon makes it instant. This is why i used map to compute everything, if i decide i need to parallelize i can just pull in rayon and replace `iter()` with `par_iter()`
+
+### Day 19
+
+- Part 1: There is no way this is idiomatic or proper code... It has tests tho???
