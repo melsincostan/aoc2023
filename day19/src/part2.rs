@@ -56,14 +56,14 @@ pub fn solve(input: &str) -> u64 {
             let potential_merge = collected_ranges[j].to_owned();
             let merge_point = can_merge(&new_range, &potential_merge);
             if merge_point.is_some() {
-                new_range = merge(new_range, potential_merge, &merge_point.unwrap());
+                new_range = merge(new_range, potential_merge, &merge_point.unwrap()); // there still is some extent of overlap in ranges, result given is too high
                 merged.insert(j);
             }
         }
 
         final_ranges.push(new_range);
     }
-    // final_ranges.iter().for_each(print_range);
+    final_ranges.iter().for_each(print_range);
     final_ranges.iter().map(range_value).sum()
 }
 
