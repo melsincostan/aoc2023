@@ -63,7 +63,7 @@ pub fn solve(input: &str) -> u64 {
 
         final_ranges.push(new_range);
     }
-    final_ranges.iter().for_each(print_range);
+    // final_ranges.iter().for_each(print_range);
     final_ranges.iter().map(range_value).sum()
 }
 
